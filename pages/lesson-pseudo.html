@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson - Pseudo</title>
+
+   <style>
+    button{
+        color: white;
+        background-color: black;
+        width: 80px;
+        height: 30px;
+    }
+
+    /*Pseudo Classes*/
+    button:hover{ /*Pseudo class - hover*/
+        background-color: blueviolet;
+        cursor: pointer;
+        
+    }
+
+    button:active{  /*Pseudo class - active*/
+        color: black;
+        background-color: yellowgreen;
+    }
+
+    ul{
+        font-size: 20px;
+    }
+
+    li:first-child{
+        color: red;
+    }
+
+    li:nth-child(3){
+        color: coral;
+    }
+
+    li:last-child{
+        color: darkgreen;
+    }
+
+    /*Pseudo Elements*/
+    p::before{
+        content: "Read this... ";
+        color: blue;
+    }
+
+    p::after{
+        content: "The end.";
+        color: red;
+    }
+
+    p::first-letter{
+        color: darkmagenta;
+        font-size: 30px;
+    }
+
+    p::first-line{
+        font-weight: bold;
+    }
+
+   </style>
+
+</head>
+<body>
+    <h1>Lesson Pseudo</h1>
+
+    <h2>Pseudo Classes</h2> <!--user interction gnna-->>
+
+    <button>Click Here</button>
+
+    <br> <br>
+
+    <ul>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Pseudo Elements</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Veritatis necessitatibus earum voluptatem cum mollitia aliquam tempore incidunt labore, 
+        autem quidem sed excepturi explicabo obcaecati! Reiciendis libero laudantium nemo minus iste!
+    </p> 
+</body>
+</html>

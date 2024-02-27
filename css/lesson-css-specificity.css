@@ -1,0 +1,44 @@
+p{
+    color: darkblue;
+}
+
+.content{
+    color: purple;
+}
+
+#content-id{
+    color: darkred;
+}
+
+h4{
+    color: teal;
+    font-size: 24px;
+}
+
+.card-title{
+    color: red;
+}
+
+#recipe-card-title{
+    color: blue;
+}
+
+div h4{
+    color: aquamarine;
+}
+
+div .card-title{
+    color: chocolate;
+}
+
+div #recipe-card-title{
+    color: rgb(95, 185, 4);
+}
+
+.card .card-title{
+    color: chartreuse;
+}
+
+#recip-card-id #recipe-card-title{
+    color: cadetblue;
+}

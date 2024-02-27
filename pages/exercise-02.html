@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-02</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid rgb(1, 65, 65);
+            border-collapse: collapse;
+        }
+    
+        th,
+        td {
+            padding: 15px;
+        }
+    
+        th {
+            background-color: rgb(206, 252, 252);
+        }
+    </style>
+</head>
+<body>
+    <h2>Form</h2>
+    <table style="width: 70%;">
+        <thead>
+            <tr>
+                <th colspan="4">Personal Information</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td colspan="3"><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td colspan="3"><input type="text" name="age"></td>
+            </tr>
+            <tr>
+                <td rowspan="3">Address</td>
+                <td>Street :</td>
+                <td colspan="2"><input type="text" name="street"></td>
+            </tr>
+            <tr>
+                <td>City :</td>
+                <td colspan="2"><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td>Zip Code :</td>
+                <td colspan="2"><input type="text" name="zipCode"></td>
+            </tr>
+            <tr>
+                <th colspan="4"> <b>Additional Information</b></th>
+            </tr>
+            <tr>
+                <td colspan="4" rowspan="3"><textarea name="info" id="textArea" cols="160" rows="10"></textarea></td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4"><input type="submit" value="Submit" style="background-color: rgb(163, 252, 252);"></td>
+            </tr>
+        </tfoot>    
+
+    </table>
+</body>
+</html>
