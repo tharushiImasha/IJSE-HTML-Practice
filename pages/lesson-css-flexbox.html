@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - FlexBox</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 50px;
+        }
+        .box1{
+            background-color: yellowgreen;
+        }
+
+        .box2{
+            background-color: teal;
+        }
+
+        .box3{
+            background-color: purple;
+        }
+
+        .box4{
+            background-color: palevioletred;
+        }
+
+        .container{
+            border: 10px solid;
+            height: 90vh;
+
+            display: flex;
+
+            /* flex-direction:row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            flex-direction: row;
+
+            /* justify-content: flex strat; by default - align on the main axis */
+
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; depatte space samana nh mda ewt */
+            /* justify-content: space-evenly; hama space ekk athrm space smani */
+            
+            /* align-items: flex-end; */
+            
+            /* align-items: center;
+            justify-content: center; */
+
+            flex-wrap: wrap;
+            align-content: center;
+            /* row-gap: 20px;
+            column-gap: 20px; */
+
+            gap: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">01</div>
+        <div class="box box2">02</div>
+        <div class="box box3">03</div>
+        <div class="box box4">04</div>
+        <div class="box box1">05</div>
+        <div class="box box2">06</div>
+        <div class="box box3">07</div>
+        <div class="box box4">08</div>
+        <div class="box box1">09</div>
+        <div class="box box2">10</div>
+        <div class="box box3">11</div>
+        <div class="box box4">12</div>
+        <div class="box box1">13</div>
+        <div class="box box2">14</div>
+        <div class="box box3">15</div>
+        <div class="box box4">16</div>
+    </div>
+    
+</body>
+</html>

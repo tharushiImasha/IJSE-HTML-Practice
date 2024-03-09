@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-CSS-Grid Layout</title>
+
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 500px 500px 500px; */
+            /*grid-template-columns: 1fr 2fr 1fr;     gnt hdil enw smnwa bedila column fr dmmama */
+            grid-template-columns: repeat(3, 1fr);
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            gap: 10px;
+        }
+        .container > div{
+            border: 2px solid;
+        }
+        /* .container > div:nth-child(odd){
+            background-color: rgb(204, 143, 212);
+        } */
+        .container > div:nth-child(5){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 8px;
+        }
+        .container > div > div{
+            border: 2px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+        <div>
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?
+        </div>
+
+    </div>
+
+</body>
+</html>
