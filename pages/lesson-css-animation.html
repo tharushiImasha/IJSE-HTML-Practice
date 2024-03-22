@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson css animation</title>
+
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: teal;
+            position: relative;
+            margin: 100px;
+            /* animation-name: square;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite; */
+            /* animation: square 10s linear 0s infinite; */
+
+            animation: up-down 3s linear infinite;
+        }
+
+        @keyframes square {
+            /* from { background-color: teal; }
+            to { background-color: yellowgreen; } */
+
+            /* 0% { background-color: teal; }
+
+            50% { background-color: springgreen; }
+
+            75% { background-color: rebeccapurple; }
+
+            100% { background-color: skyblue; } */
+
+
+            0% { left: 100px; top: 100px; }
+            25% { left: 500px; top: 100px; border-radius: 16px; background-color: rgb(1, 172, 172); transform: scale(1.2);}
+            50% { left: 500px; top: 500px; border-radius: 30px; background-color: rgb(66, 161, 161); transform: scale(1.5);}
+            75% { left: 100px; top: 500px; border-radius: 50px; background-color: rgb(136, 216, 216);transform: scale(1.7);}
+            100% { left: 100px; top: 100px; border-radius: 100%; background-color: rgb(200, 255, 255); transform: scale(1);}
+
+
+            
+        }
+
+        @keyframes up-down {
+            0% {transform: translateY(0);}
+            50% {transform: translateY(-100px);}
+            100% {transform: translateY(100px);}
+        }
+
+    
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

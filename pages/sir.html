@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 06</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: wheat;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: wheat;
+            padding: 12px;
+        }
+
+        #logo-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px;
+        }
+
+        .logo-container {
+            display: flex;
+        }
+
+        .navbar>ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar>ul {
+            list-style-type: none;
+        }
+
+        .navbar>ul>li {
+            margin: 0 8px;
+        }
+
+        .navbar>ul>li>a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .intro-container {
+            display: flex;
+        }
+
+        .intro-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            padding: 12px;
+        }
+
+        #intro-image {
+            width: 50%;
+            height: 90vh;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .social-media>a>img {
+            width: 28px;
+            height: 28px;
+        }
+
+        .tech-card {
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .tech-card>h2 {
+            text-align: center;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            padding: 12px;
+        }
+
+        .tech-image {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo-container">
+            <img id="logo-image" src="/assets/WhatsApp Image 2024-01-31 at 9.38.47 PM.jpeg" alt="logo-image" />
+            <h3>Yashith Chanuka</h3>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Projects</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- intro -->
+    <div class="intro-container">
+        <div class="intro-content">
+            <h1>Hey There!!!</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                assumenda, at ullam, nulla facere magni corporis, ipsa sapiente
+                laborum minima labore soluta eius. Mollitia omnis sequi, accusantium
+                dicta molestias dolores.
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/assets/facebook.jpeg" alt="facebook-img" />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="/assets/linkedin.png" alt="linkedin-img" />
+                </a>
+                <a href="https://www.github.com" target="_blank">
+                    <img src="/assets/github.png" alt="github-img" />
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="/assets/youtube.png" alt="youtube-img" />
+                </a>
+            </div>
+        </div>
+        <img id="intro-image" src="/assets/photo1.jpg" alt="intro-image" />
+    </div>
+
+    <!-- tech-stack -->
+    <div class="tech-stack">
+        <h1 style="text-align: center">My Technology Stack</h1>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+            <div class="tech-card">
+                <img class="tech-image" src="/assets/java.png" alt="tech-image" />
+                <h2>Java</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

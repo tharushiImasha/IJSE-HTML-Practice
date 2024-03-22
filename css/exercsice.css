@@ -1,0 +1,39 @@
+header{
+    background-color: rgba(77, 139, 119, 0.322);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container ul li {
+    display: inline;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+.tech{
+    box-shadow: 5px 5px 5px 5px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgTech{
+    width: 100px;
+    padding: 30px 30px 10px 30px;
+}
+
+body{
+    margin: 0px;
+    font-family: "Aladin", system-ui;
+}
+
+.divContent > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    width: 50%;
+}

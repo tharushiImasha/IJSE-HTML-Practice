@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+    font-family: "Aladin", system-ui;
+}
+
+header {
+    background-color: rgba(77, 139, 119, 0.322);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container ul li {
+    display: inline;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+.content-about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px grey;
+    margin: 30px 100px 50px 100px;
+}
+
+.mypic {
+    border-radius: 15px 0px 0px 15px;
+    width: 50%;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-media>a>img {
+    width: 25px;
+    height: 25px;
+}
+
+.technology > h2{
+    text-align: center;
+}
+
+.tech-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px;
+}
+
+.tech-card{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+.tech-card > img{
+    width: 80px;
+}

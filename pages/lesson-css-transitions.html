@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: slateblue;
+            margin: 250px auto ;
+            /* transition-property: background-color, width;
+            transition-duration: 1s;
+            transition-timing-function:linear;
+            transition-delay: 1s; */
+
+            /* transition: width 3s ease 1s; */
+
+            /* uda peli 4m thani peliyt me piliwelt dnn puluwn */
+
+
+            /* okkom ek pra dnn puluwn - all */
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function:linear;
+            transition-delay: 1s;
+        }
+
+        .box:hover{
+            width: 400px;
+            background-color: pink;
+        }
+
+        .circle{
+            width: 500px;
+            border-radius: 100%;
+            background-color: slateblue;
+            margin: 250px auto ;
+            transition-property: background-color, width;
+            transition-duration: 1s;
+            transition-timing-function:linear
+        }
+
+        .circle:hover{
+            width: 800px;
+            background-color: pink;
+        }
+
+        p{
+            font-size: 25px;
+            margin: 200px;
+            transition: all 3s linear;
+        }
+
+        p:hover{
+            font-size: 45px;
+            color: turquoise;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="circle"></div>
+
+    <p>
+        Hello World !
+    </p>
+</body>
+</html>
