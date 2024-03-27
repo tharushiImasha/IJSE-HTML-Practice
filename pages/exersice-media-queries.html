@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-media-queries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px 30px;
+            margin-top: 30px;
+        }
+
+        /* .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } */
+
+        .card-set{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+
+        .card{
+            background-color: rgba(221, 160, 221, 0.397);
+            /* width: 250px; */
+            /* height: 450px; */
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 3px 3px 3px 3px gray;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
+
+        .profile{
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile > img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .rating{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rating-box{
+            /* width: 200px; */
+            height: auto;
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .rating-box > p{
+            padding: 15px;
+            padding-bottom: 0px;
+            
+        }
+
+        .rating-box > h6{
+            font-size: 15px;
+            text-align: right;
+            margin: 0px;
+            padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+        }
+
+        @media screen and (max-width: 575px){
+            .card-set{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+
+            .profile{
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                align-items: center;
+             }
+
+             .content > h1{
+                font-size: 25px;
+             }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .card-set{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px){
+            .card-set{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199px){
+            .card-set{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) and (max-width: 1399px){
+            .card-set{
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 20px;
+            }
+        }
+
+        .scrollabel-review{
+            max-height: 100px;
+            overflow-y: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content">
+
+        <h1 style="text-align: center;">Reviews Coner</h1>
+
+        <div class="card-set">
+            <div class="card">
+                <div class="profile">
+                    <img src="/assets/photo2.jpg" alt="photo">
+        
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+        
+                </div>
+        
+                <div class="rating">
+                    <div class="rating-box">
+                        <div  class="scrollabel-review">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit amet facere ut, iure ea?
+                            Dolorum vero blanditiis reiciendis, provident
+                            perferendis tenetur vel necessitatibus nam. Quos sequi perspiciatis cumque quidem impedit laboriosam
+                            earum quae, deserunt, quibusdam quasi porro rem hic.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit amet facere ut, iure ea?
+                            Dolorum vero blanditiis reiciendis, provident
+                            perferendis tenetur vel necessitatibus nam. Quos sequi perspiciatis cumque quidem impedit laboriosam
+                            earum quae, deserunt, quibusdam quasi porro rem hic.
+                        </div>
+                        <p>
+                            
+                        </p>
+        
+                        <h6>Tharushi Imasha</h6>
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="card">
+                <div class="profile">
+                    <img src="/assets/photo2.jpg" alt="photo">
+        
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+        
+                </div>
+        
+                <div class="rating">
+                    <div class="rating-box">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit amet facere ut, iure ea?
+                            Dolorum vero blanditiis reiciendis, provident
+                            perferendis tenetur vel necessitatibus nam. Quos sequi perspiciatis cumque quidem impedit laboriosam
+                            earum quae, deserunt, quibusdam quasi porro rem hic.
+                        </p>
+        
+                        <h6>Tharushi Imasha</h6>
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="card">
+                <div class="profile">
+                    <img src="/assets/photo2.jpg" alt="photo">
+        
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+        
+                </div>
+        
+                <div class="rating">
+                    <div class="rating-box">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit amet facere ut, iure ea?
+                            Dolorum vero blanditiis reiciendis, provident
+                            perferendis tenetur vel necessitatibus nam. Quos sequi perspiciatis cumque quidem impedit laboriosam
+                            earum quae, deserunt, quibusdam quasi porro rem hic.
+                        </p>
+        
+                        <h6>Tharushi Imasha</h6>
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="card">
+                <div class="profile">
+                    <img src="/assets/photo2.jpg" alt="photo">
+        
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+        
+                </div>
+        
+                <div class="rating">
+                    <div class="rating-box">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit amet facere ut, iure ea?
+                            Dolorum vero blanditiis reiciendis, provident
+                            perferendis tenetur vel necessitatibus nam. Quos sequi perspiciatis cumque quidem impedit laboriosam
+                            earum quae, deserunt, quibusdam quasi porro rem hic.
+                        </p>
+        
+                        <h6>Tharushi Imasha</h6>
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="card">
+                <div class="profile">
+                    <img src="/assets/photo2.jpg" alt="photo">
+        
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+        
+                </div>
+        
+                <div class="rating">
+                    <div class="rating-box">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit amet facere ut, iure ea?
+                            Dolorum vero blanditiis reiciendis, provident
+                            perferendis tenetur vel necessitatibus nam. Quos sequi perspiciatis cumque quidem impedit laboriosam
+                            earum quae, deserunt, quibusdam quasi porro rem hic.
+                        </p>
+        
+                        <h6>Tharushi Imasha</h6>
+        
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="card">
+                <div class="profile">
+                    <img src="/assets/photo2.jpg" alt="photo">
+        
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+        
+                </div>
+        
+                <div class="rating">
+                    <div class="rating-box">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugit amet facere ut, iure ea?
+                            Dolorum vero blanditiis reiciendis, provident
+                            perferendis tenetur vel necessitatibus nam. Quos sequi perspiciatis cumque quidem impedit laboriosam
+                            earum quae, deserunt, quibusdam quasi porro rem hic.
+                        </p>
+        
+                        <h6>Tharushi Imasha</h6>
+        
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+</body>
+</html>
