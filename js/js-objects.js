@@ -27,3 +27,23 @@ console.log('Student : ', student)
 
 student['age'] = 30;
 console.log('Student : ', student.age)
+
+
+console.log('=============================')
+
+let person = {
+    name: 'Kamal',
+    age: 20,
+    phone: '0778459652',
+    greet: () => console.log('Hey Good Morning')
+}
+
+// console.log(person.greet())
+
+console.log('=============================')
+
+//Iterating over properties
+
+for(let key in person){
+    console.log(key + ':' + person[key])
+}
