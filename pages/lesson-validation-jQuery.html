@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/validation.css">
+</head>
+<body>
+
+    <div class="all">
+        <form id="registration-form">
+            <h1>Customer Rejistration</h1>
+        
+            <div class="inputs">
+                <label for="fullName"> Full Name : </label>
+                <input type="text" name="fullName" id="fullname">
+                <span class="error" id="fullNameError"></span>
+        
+                <label for="email"> Email : </label>
+                <input type="email" name="fullName"  id="email">
+                <span class="error" id="emailError"></span>
+        
+                <label for="password"> Password : </label>
+                <input type="password" name="fullName" id="password"> 
+                <span class="error" id="passwordError"></span>
+        
+                <label for="password"> Confirm Password : </label>
+                <input type="password" name="fullName"  id="confirmPassword">
+                <span class="error" id="confirmPasswordError"></span>
+        
+                <button type="submit"> Register </button>
+            </div>
+        
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#registration-form").submit(function (event) {
+                event.preventDefault();
+                if (validateForm()) {
+                    alert("Form submitted.");
+                }
+            });
+        });
+
+        function validateForm() {
+            let fullName = $("#fullname").val();
+            let email = $("#email").val();
+            let password = $("#password").val();
+            let confirmedPassword = $("#confirmPassword").val();
+            
+            isValid = true;
+
+            if (fullName === null || fullName === "") {
+                $("#fullNameError").text("Please enter your Full Name");
+                isValid = false;
+            } else {
+                $("#fullNameError").text("");
+            }
+
+            if (email === null || email === "") {
+                $("#emailError").text("Please enter email");
+                isValid = false;
+            } else if (!isValidEmail) {
+                $("#emailError").text("Please enter valid email.");
+                isValid = false;
+            } else {
+                $("#emailError").text("");
+            }
+
+            if (password === null || password === "") {
+                $("#passwordError").text("Please enter your Password");
+                isValid = false;
+            } else if (password.length < 6) {
+                $("#passwordError").text("Password must be at least 6 characters.");
+            } else {
+                $("#passwordError").text("");
+            }
+
+            if (confirmedPassword === null || confirmedPassword === "") {
+                $("#confirmPasswordError").text(
+                    "Please enter your Confirmed password"
+                );
+                isValid = false;
+            } else if (password !== confirmedPassword) {
+                $("#confirmPasswordError").text("Passwords do not match");
+                isValid = false;
+            } else {
+                $("#confirmPasswordError").text("");
+            }
+
+            return isValid;
+        }
+
+        function isValidEmail() {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+    </script>
+    
+    <!-- <script src="/js/ValidationJQuery.js"></script> -->
+</body>
+</html>

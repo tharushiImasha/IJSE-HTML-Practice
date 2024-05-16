@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson - jQuery Basics</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // document.addEventListener('DOMContentLoaded', function(){
+        //     console.log('Executes once the DOM is fully loaded - JS')
+        // });
+
+        $(document).ready(function () {
+            console.log('Executes once the DOM is fully loaded - jQuery');
+
+            $('#box').css('background-color', "yellow")
+            $('#box').css('border-color', "red")
+            $('#box').css('border-width', "3px")
+            $('#box').css('border-radius', "100%")
+            $('#box').addClass('rectangle')
+        })
+
+    </script>
+
+</body>
+</html>

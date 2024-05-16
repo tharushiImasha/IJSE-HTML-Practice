@@ -47,6 +47,6 @@ userNameField.addEventListener('keyup', (event) => console.log('Key up...' + eve
 //6. submit event
 
 document.getElementById('myForm').addEventListener('submit', (event) => {
-    event.preventDefault()
+    event.preventDefault()          //refresh wen ek nwttno 
     console.log('Form submited')
 })
